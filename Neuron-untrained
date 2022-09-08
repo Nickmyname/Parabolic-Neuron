@@ -6,6 +6,8 @@
 <body background="foto_sfondo_calcolatrice.jpg">
      <script type="text/javascript">
      var neurone;
+     
+     // I created an object with points. These points can be approximate really well with y= x^2  
      var punti= {
           puntix: [0,1,2,3,4,5,6,7,8,9] 
          , puntiy: [0,2,3,8,17,24,37,48,64,82]
