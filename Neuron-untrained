@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Neurone</title>
+</head>    
+<body background="foto_sfondo_calcolatrice.jpg">
+     <script type="text/javascript">
+     var neurone;
+     var punti= {
+          puntix: [0,1,2,3,4,5,6,7,8,9] 
+         , puntiy: [0,2,3,8,17,24,37,48,64,82]
+         , errore: [0,1,-1,-1,1,-1,1,-1,0,1]
+         , testx:  [10,11,12,13,14,15,16,17]
+         , testy: [10*10,11*11,12*12,13*13,14*14,15*15,16*16,17*17,18]
+     }
+   //  var punto=  punti.puntix[1];
+   //  console.log(punto);
+   
+  var punti2 = {
+     puntix2 : punti.puntix * punti.punti
+     ,puntix3 : punti.puntix * punti.puntix * punti.puntix
+     ,puntiy2 : punti.puntiy * punti.puntiy
+     ,puntiy3 : punti.puntiy * punti.puntiy * punti.puntix
+  }
+  
+  var pesopuntix = 1
+  var pesopuntiy = 1
+  var pesopuntix2 = 1
+  var pesopuntiy2;
+  var pesopuntix3;
+  var pesopuntiy3;
+  var somma;
+  
+  
+  for (let i = 0; i < 10 ; i++) {
+    
+     somma =  pesopuntix * punti.puntix[i] + pesopuntix2 * punti.puntix[i]* punti.puntix[i] + pesopuntiy * punti.puntiy[i]
+   
+  // a = (Math.random() * 100)
+
+  }
+  // I still don t undestand how to train it but teorically I think the basic idea is good. I want to do linear regression
+  // not with a line but with parable (or something else). I think i can do that by using  x,y inputs as well as a new x^2 inputs created by multypling x*x ;
+  // then  it should work like a classic ml but a single neuron will be able to do "linear" (parabolic) regression just by adding an input.
+  
+
+ 
+
+
+
+   
+     
+</script>
+</body>
+</html>
